@@ -25,5 +25,12 @@ public class Main {
             System.out.println("yes");
         }
 
+        // don't throw exceptions in finally block
+        try {
+            throw new IllegalArgumentException();
+        } finally {
+            throw new RuntimeException();
+        }
+
     }
 }
