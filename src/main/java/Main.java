@@ -25,6 +25,12 @@ public class Main {
             System.out.println("yes");
         }
 
+        // should be using StringBuilder
+        String myString = "";
+        for(int i = 0; i < 100; i++) {
+            myString = myString + i;
+        }
+
         // don't throw exceptions in finally block
         try {
             throw new IllegalArgumentException();
